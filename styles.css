@@ -1,0 +1,96 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1001;
+  pointer-events: auto;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.red-border {
+  border: 3px solid #ff4444;
+}
+
+.green-border {
+  border: 3px solid #44ff44;
+}
+
+.modal h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+canvas {
+    background: #000;
+    display: block;
+    margin: 0 auto;
+    z-index: 0;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#menuBtn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 24px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#menuModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+#menuModal > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#restartBtn,
+#levelSelectBtn,
+#cancelBtn,
+#nextLevelBtn {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #444;
+  border: 1px solid #666;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+    
